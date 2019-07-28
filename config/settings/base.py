@@ -1,7 +1,7 @@
 """
 Base settings to build other settings files upon.
 """
-
+import os
 import environ
 
 ROOT_DIR = (
@@ -11,7 +11,7 @@ APPS_DIR = ROOT_DIR.path("personal_website")
 
 env = environ.Env()
 
-READ_DOT_ENV_FILE = env.bool("DJANGO_READ_DOT_ENV_FILE", default=False)
+READ_DOT_ENV_FILE = env.bool("DJANGO_READ_DOT_ENV_FILE", default=True)
 if READ_DOT_ENV_FILE:
     # OS environment variables take precedence over variables from .env
     env.read_env(str(ROOT_DIR.path(".env")))
@@ -69,14 +69,17 @@ THIRD_PARTY_APPS = [
     "allauth.account",
     "allauth.socialaccount",
     "rest_framework",
+    'webpack_loader',
 ]
 
 LOCAL_APPS = [
     "personal_website.users.apps.UsersConfig",
     # Your stuff: custom apps go here
+    "personal_website.blog.apps.BlogConfig",
 ]
 # https://docs.djangoproject.com/en/dev/ref/settings/#installed-apps
 INSTALLED_APPS = DJANGO_APPS + THIRD_PARTY_APPS + LOCAL_APPS
+FRONTEND_DIR = os.path.join(APPS_DIR, 'frontend')
 
 # MIGRATIONS
 # ------------------------------------------------------------------------------
@@ -138,7 +141,7 @@ STATIC_ROOT = str(ROOT_DIR("staticfiles"))
 # https://docs.djangoproject.com/en/dev/ref/settings/#static-url
 STATIC_URL = "/static/"
 # https://docs.djangoproject.com/en/dev/ref/contrib/staticfiles/#std:setting-STATICFILES_DIRS
-STATICFILES_DIRS = [str(APPS_DIR.path("static"))]
+STATICFILES_DIRS = [str(APPS_DIR.path("static")), os.path.join(FRONTEND_DIR, 'dist/static')]
 # https://docs.djangoproject.com/en/dev/ref/contrib/staticfiles/#staticfiles-finders
 STATICFILES_FINDERS = [
     "django.contrib.staticfiles.finders.FileSystemFinder",
@@ -160,7 +163,7 @@ TEMPLATES = [
         # https://docs.djangoproject.com/en/dev/ref/settings/#std:setting-TEMPLATES-BACKEND
         "BACKEND": "django.template.backends.django.DjangoTemplates",
         # https://docs.djangoproject.com/en/dev/ref/settings/#template-dirs
-        "DIRS": [str(APPS_DIR.path("templates"))],
+        "DIRS": [str(APPS_DIR.path("templates")), os.path.join(FRONTEND_DIR, 'dist')],
         "OPTIONS": {
             # https://docs.djangoproject.com/en/dev/ref/settings/#template-loaders
             # https://docs.djangoproject.com/en/dev/ref/templates/api/#loader-types
@@ -182,6 +185,8 @@ TEMPLATES = [
         },
     }
 ]
+
+
 # http://django-crispy-forms.readthedocs.io/en/latest/install.html#template-packs
 CRISPY_TEMPLATE_PACK = "bootstrap4"
 
@@ -261,3 +266,10 @@ SOCIALACCOUNT_ADAPTER = "personal_website.users.adapters.SocialAccountAdapter"
 
 # Your stuff...
 # ------------------------------------------------------------------------------
+WEBPACK_LOADER = {
+    'DEFAULT': {
+        'CACHE': DEBUG,
+        'BUNDLE_DIR_NAME': '/bundles/',  # must end with slash
+        'STATS_FILE': os.path.join(FRONTEND_DIR, 'webpack-stats.json'),
+    }
+}

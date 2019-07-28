@@ -330,3 +330,15 @@ personal_website/media/
 .env
 .envs/*
 !.envs/.local/
+.idea/runConfigurations/runserver_plus.xml
+.idea/runConfigurations/runserver.xml
+.idea/runConfigurations/migrate.xml
+.idea/personal_website.iml
+.idea/misc.xml
+.env
+.idea/misc.xml
+.idea/personal_website.iml
+.idea/runConfigurations/migrate.xml
+.idea/runConfigurations/runserver.xml
+.idea/runConfigurations/runserver_plus.xml
+.idea/runConfigurations/runserver.xml
