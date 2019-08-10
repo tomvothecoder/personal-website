@@ -1,48 +1,10 @@
+
 <template>
   <div id="app">
-    <section class="container" id="nav">
-      <div class="columns">
-        <div class="column is-half is-offset-one-quarter">
-          <nav class="level">
-            <div class="level-item has-text-centered">
-              <div>
-                <a href="#" v-scroll-to="'#experience'" class="nav-link">
-                  <span class="nav-heading">Experience</span>
-                </a>
-              </div>
-            </div>
-            <div class="level-item has-text-centered">
-              <div>
-                <a href="#" v-scroll-to="'#skills'" class="nav-link">
-                  <span class="nav-heading">Skills</span>
-                </a>
-              </div>
-            </div>
-            <div class="level-item has-text-centered">
-              <div>
-                <a href="#" v-scroll-to="'#portfolio'" class="nav-link">
-                  <span class="nav-heading">Portfolio</span>
-                </a>
-              </div>
-            </div>
-            <div class="level-item has-text-centered">
-              <div>
-                <a href="#" v-scroll-to="'#about'" class="nav-link">
-                  <span class="nav-heading">About</span>
-                </a>
-              </div>
-            </div>
-            <div class="level-item has-text-centered">
-              <div>
-                  <router-link to="/blog" class="nav-link">
-                  <span class="nav-heading">blog</span></router-link>
-              </div>
-            </div>
-          </nav>
-        </div>
-      </div>
-    </section>
-    <router-view/>
+    <Navigation></Navigation>
+    <transition name="fade" mode="out-in">
+      <router-view />
+    </transition>
   </div>
 </template>
 
@@ -63,9 +25,7 @@ p {
   font-family: "Lato", sans-serif;
 }
 
-#
-
-#app {
+# #app {
   font-family: "Raleway", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -79,7 +39,7 @@ nav {
 }
 
 .nav-link:hover {
-  color: #0077B5;
+  color: #0077b5;
 }
 .nav-heading {
   display: block;
@@ -89,5 +49,25 @@ nav {
   text-transform: uppercase;
 }
 
+.fade-enter-active,
+.fade-leave-active {
+  transition-duration: 0.3s;
+  transition-property: opacity;
+  transition-timing-function: ease;
+}
+
+.fade-enter,
+.fade-leave-active {
+  opacity: 0;
+}
 </style>
 
+<script>
+import Navigation from "./components/Navigation";
+export default {
+  name: "app",
+  components: {
+    Navigation: Navigation
+  }
+};
+</script>
