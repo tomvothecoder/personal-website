@@ -1,13 +1,28 @@
 <template>
-  <div class="blog">
-    <div class="container">
-      <div class="column is-full has-text-centered">
-        <h1 class="blog-title">Tom's Time Capsule</h1>
-        <p class="blog-description">Software Engineer | Web Developer</p>
+  <transition name="fade" mode="out-in">
+    <div class="blog">
+      <div class="container">
+        <div class="column is-full has-text-centered">
+          <div class="columns is-centered">
+            <figure class="image is-128x128">
+              <img class="is-rounded" src="../assets/me.jpg" alt="me" id="me" />
+            </figure>
+          </div>
+          <h1 class="blog-title">Tom's Time Capsule</h1>
+          <p class="blog-description">Software Engineer | Web Developer</p>
+        </div>
+        <div class="columns is-centered is-multiline">
+          <div class="column is-full" v-for="post in posts" :key="post.id">
+            <div class="columns is-centered">
+              <div class="column is-three-quarters">
+                <BlogPostCard :post="post" @click.native="alertClicked(post.title)"></BlogPostCard>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-      <BlogPostCard :posts="posts"></BlogPostCard>
     </div>
-  </div>
+  </transition>
 </template>
 
 
@@ -33,6 +48,9 @@ export default {
       axios
         .get("http://localhost:8000/api/v1/blog/posts/")
         .then(response => (this.posts = response.data));
+    },
+    alertClicked: function(post) {
+      alert(`clicked ${post}`);
     }
   }
 };
@@ -44,7 +62,7 @@ export default {
   font-size: 3rem;
 }
 
-.blog-description {
+#home-link {
   border-bottom: 1px solid #dadada;
   color: #9a9a9a;
   font-family: Lato, sans-serif;
