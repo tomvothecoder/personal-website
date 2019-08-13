@@ -3,7 +3,7 @@ from rest_framework.response import Response
 from rest_framework import generics
 
 from ..models import Category, Post
-from .serializers import CategorySerializer, PostSerializer
+from .serializers import CategorySerializer, ContactSerializer, PostSerializer
 
 
 class PostList(generics.ListCreateAPIView):
@@ -21,6 +21,9 @@ class CategoryList(generics.ListCreateAPIView):
     serializer_class = CategorySerializer
 
 
-class CreateCategory(generics.CreateAPIView):
+class CategoryCreate(generics.CreateAPIView):
     serializer_class = CategorySerializer
 
+
+class ContactCreate(generics.CreateAPIView):
+    serializer_class = ContactSerializer
