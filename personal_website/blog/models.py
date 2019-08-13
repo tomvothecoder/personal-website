@@ -14,9 +14,14 @@ class Post(models.Model):
     body = models.TextField()
     created_on = models.DateTimeField(auto_now_add=True)
     last_modified = models.DateTimeField(auto_now=True)
-    categories = models.ManyToManyField('Category', related_name='posts')
-    image = models.ImageField(upload_to='post_images', blank=True, null=True)
+    categories = models.ManyToManyField("Category", related_name="posts")
+    image = models.ImageField(upload_to="post_images", blank=True, null=True)
 
     def __str__(self):
-        return f'{self.title} - {self.created_on} - {self.categories.name}'
+        return f"{self.title} - {self.created_on} - {self.categories.name}"
 
+
+class Contact(models.Model):
+    name = models.CharField(max_length=255)
+    email = models.EmailField()
+    message = models.TextField()
