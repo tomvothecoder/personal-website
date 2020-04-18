@@ -3,39 +3,43 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 
 import Experience from '../components/Experience';
+import Skills from '../components/Skills';
+
 import './Home.css';
 
 function Home() {
   return (
-    <div class="home">
-      <section class="section">
-        <div class="hero is-large is-center">
-          <div class="hero-body">
-            <div class="container has-text-centered">
-              <h1 id="hero-welcome">Hi, I'm</h1>
+    <div className="home">
+      <section className="section">
+        <div className="hero is-large is-center">
+          <div className="hero-body">
+            <div className="container has-text-centered">
+              <h1 id="hero-welcome">Hi, I&apos;m</h1>
               <h1 id="hero-title">Tom Vo</h1>
               <h2 id="hero-subtitle">
-                I'm a Software Engineer and I like to build web-apps.
+                I&apos;m a Software Engineer and I like to build web-apps.
               </h2>
             </div>
-            <div class="container has-text-centered">
-              <div class="columns is-mobile is-multiline is-centered">
-                <div class="column is-narrow">
-                  <p class="bd-notification is-primary">
+            <div className="container has-text-centered">
+              <div className="columns is-mobile is-multiline is-centered">
+                <div className="column is-narrow">
+                  <p className="bd-notification is-primary">
                     <a
                       href="https://www.linkedin.com/in/tomvo16/"
                       id="linkedin-icon"
+                      rel="noopener noreferrer"
                       target="_blank"
                     >
                       <FontAwesomeIcon icon={faLinkedin} size="3x" />
                     </a>
                   </p>
                 </div>
-                <div class="column is-narrow">
-                  <p class="bd-notification is-primary">
+                <div className="column is-narrow">
+                  <p className="bd-notification is-primary">
                     <a
                       href="https://github.com/tvo25"
                       id="github-icon"
+                      rel="noopener noreferrer"
                       target="_blank"
                     >
                       <FontAwesomeIcon icon={faGithub} size="3x" />
@@ -47,27 +51,31 @@ function Home() {
           </div>
         </div>
       </section>
-      <section class="section" id="experience">
-        <div class="container">
-          <h1 class="section-title has-text-centered">— Where I've been —</h1>
+      <section className="section" id="experience">
+        <div className="container">
+          <h1 className="section-title has-text-centered">
+            — Where I&apos;ve been —
+          </h1>
           <Experience></Experience>
         </div>
       </section>
-      <section class="section" id="skills">
-        <div class="container has-text-centered">
-          <h1 class="section-title">— Things I've Learned —</h1>
-          {/* <skills></skills> */}
+      <section className="section" id="skills">
+        <div className="container has-text-centered">
+          <h1 className="section-title">— Things I&apos;ve Learned —</h1>
+          <Skills></Skills>
         </div>
       </section>
-      <section class="section" id="portfolio">
-        <div class="container has-text-centered">
-          <h1 class="section-title">— Some of my work —</h1>
+      <section className="section" id="portfolio">
+        <div className="container has-text-centered">
+          <h1 className="section-title">— Some of my work —</h1>
           {/* <portfolio></portfolio> */}
         </div>
       </section>
-      <section class="section" id="about">
-        <div class="container">
-          <h1 class="section-title has-text-centered">— A little about me —</h1>
+      <section className="section" id="about">
+        <div className="container">
+          <h1 className="section-title has-text-centered">
+            — A little about me —
+          </h1>
           {/* <about></about> */}
         </div>
       </section>
