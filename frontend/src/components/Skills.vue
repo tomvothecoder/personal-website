@@ -1,11 +1,11 @@
-<script src="../../../../../../personal-website/src/router.js"></script>
+<script src="../router.js"></script>
 <template>
   <div id="skills">
     <div class="columns is-centered">
       <div class="column is-1" data-aos="zoom-in">
         <div class="is-flex logo">
           <figure class="image is-64x64 logo">
-            <img src="../assets/svgs/colored/python.svg" alt="Django">
+            <img src="../assets/svgs/colored/python.svg" alt="Django" />
           </figure>
         </div>
         <h1 class="skill" id="django">Python</h1>
@@ -13,7 +13,7 @@
       <div class="column is-1" data-aos="zoom-in">
         <div class="is-flex logo">
           <figure class="image is-64x64 logo">
-            <img src="../assets/svgs/colored/c.svg" alt="Django">
+            <img src="../assets/svgs/colored/c.svg" alt="Django" />
           </figure>
         </div>
         <h1 class="skill" id="django">C</h1>
@@ -21,7 +21,7 @@
       <div class="column is-1" data-aos="zoom-in">
         <div class="is-flex logo">
           <figure class="image is-64x64 logo">
-            <img src="../assets/svgs/colored/c++.svg" alt="Django">
+            <img src="../assets/svgs/colored/c++.svg" alt="Django" />
           </figure>
         </div>
         <h1 class="skill" id="django">C++</h1>
@@ -34,14 +34,14 @@
           <div class="column is-one-third" data-aos="zoom-in">
             <div class="is-flex logo">
               <figure class="image is-64x64 logo">
-                <img src="../assets/svgs/colored/django.svg" alt="Django">
+                <img src="../assets/svgs/colored/django.svg" alt="Django" />
               </figure>
             </div>
             <h1 class="skill" id="django">Django</h1>
           </div>
           <div class="column is-one-third" data-aos="zoom-in">
             <figure class="image is-96x64">
-              <img src="../assets/svgs/colored/nodejs.svg" alt="Node.js">
+              <img src="../assets/svgs/colored/nodejs.svg" alt="Node.js" />
             </figure>
             <h1 class="skill">Node.js</h1>
           </div>
@@ -50,7 +50,7 @@
           <div class="column is-one-third" data-aos="zoom-in">
             <div class="is-flex logo">
               <figure class="image is-64x64">
-                <img src="../assets/svgs/colored/mysql.svg" alt="MySQL">
+                <img src="../assets/svgs/colored/mysql.svg" alt="MySQL" />
               </figure>
             </div>
             <h1 class="skill">MySQL</h1>
@@ -58,7 +58,7 @@
           <div class="column is-one-third" data-aos="zoom-in">
             <div class="is-flex logo">
               <figure class="image is-64x64">
-                <img src="../assets/svgs/colored/postgresql.svg" alt="PostgreSQL">
+                <img src="../assets/svgs/colored/postgresql.svg" alt="PostgreSQL" />
               </figure>
             </div>
 
@@ -68,7 +68,7 @@
         <div class="columns is-centered">
           <div class="column is-one-third" data-aos="zoom-in">
             <div class="is-flex logo">
-              <img src="../assets/svgs/colored/mongodb.svg" alt="MongoDB">
+              <img src="../assets/svgs/colored/mongodb.svg" alt="MongoDB" />
             </div>
             <h1 class="skill">MongoDB</h1>
           </div>
@@ -81,7 +81,7 @@
           <div class="column is-one-third" data-aos="zoom-in">
             <div class="is-flex logo">
               <figure class="image is-64x64">
-                <img src="../assets/svgs/html5.svg" alt="HTML">
+                <img src="../assets/svgs/html5.svg" alt="HTML" />
               </figure>
             </div>
             <h1 class="skill">HTML</h1>
@@ -89,7 +89,7 @@
           <div class="column is-one-third" data-aos="zoom-in">
             <div class="is-flex logo">
               <figure class="image is-64x64">
-                <img src="../assets/svgs/css3.svg" alt="CSS">
+                <img src="../assets/svgs/css3.svg" alt="CSS" />
               </figure>
             </div>
             <h1 class="skill">CSS</h1>
@@ -99,7 +99,7 @@
           <div class="column is-one-third" data-aos="zoom-in">
             <div class="is-flex logo" id="jquery">
               <figure class="image is-96x64">
-                <img src="../assets/svgs/colored/jquery.svg" alt="jQuery">
+                <img src="../assets/svgs/colored/jquery.svg" alt="jQuery" />
               </figure>
             </div>
             <h1 class="skill" id="jquery-text">jQuery</h1>
@@ -107,7 +107,7 @@
           <div class="column is-one-third" data-aos="zoom-in">
             <div class="is-flex logo">
               <figure class="image is-64x64">
-                <img src="../assets/svgs/colored/vue.svg" alt="Vue">
+                <img src="../assets/svgs/colored/vue.svg" alt="Vue" />
               </figure>
             </div>
 
@@ -118,7 +118,7 @@
           <div class="column is-one-third" data-aos="zoom-in">
             <div class="is-flex logo">
               <figure class="image is-64x64">
-                <img src="../assets/svgs/colored/bootstrap.svg" alt="Bootstrap">
+                <img src="../assets/svgs/colored/bootstrap.svg" alt="Bootstrap" />
               </figure>
             </div>
 
@@ -127,7 +127,7 @@
           <div class="column is-one-third" data-aos="zoom-in">
             <div class="is-flex logo">
               <figure class="image is-64x64">
-                <img src="../assets/svgs/colored/bulma.svg" alt="Bulma">
+                <img src="../assets/svgs/colored/bulma.svg" alt="Bulma" />
               </figure>
             </div>
 
@@ -143,7 +143,7 @@
           <div class="column is-one-third" data-aos="zoom-in">
             <div class="is-flex logo">
               <figure class="image is-64x64 logo">
-                <img src="../assets/svgs/colored/github-icon.svg" alt="Github">
+                <img src="../assets/svgs/colored/github-icon.svg" alt="Github" />
               </figure>
             </div>
             <h1 class="skill">Github</h1>
@@ -151,7 +151,7 @@
           <div class="column is-one-third" data-aos="zoom-in">
             <div class="is-flex logo">
               <figure class="image is-64x64">
-                <img src="../assets/svgs/colored/bitbucket.svg" alt="Bitbucket">
+                <img src="../assets/svgs/colored/bitbucket.svg" alt="Bitbucket" />
               </figure>
             </div>
             <h1 class="skill">Bitbucket</h1>
@@ -161,7 +161,7 @@
           <div class="column is-one-third" data-aos="zoom-in">
             <div class="is-flex logo">
               <figure class="image is-64x64">
-                <img src="../assets/svgs/colored/aws.svg" alt="AWS">
+                <img src="../assets/svgs/colored/aws.svg" alt="AWS" />
               </figure>
             </div>
             <h1 class="skill">AWS</h1>
@@ -169,7 +169,7 @@
           <div class="column is-one-third" data-aos="zoom-in">
             <div class="is-flex logo">
               <figure class="image is-64x64">
-                <img src="../assets/svgs/heroku.svg" alt="Heroku">
+                <img src="../assets/svgs/heroku.svg" alt="Heroku" />
               </figure>
             </div>
 
@@ -180,7 +180,7 @@
           <div class="column is-one-third" data-aos="zoom-in">
             <div class="is-flex logo">
               <figure class="image is-64x64">
-                <img src="../assets/svgs/colored/confluence.svg" alt="Confluence">
+                <img src="../assets/svgs/colored/confluence.svg" alt="Confluence" />
               </figure>
             </div>
             <h1 class="skill">Confluence</h1>
@@ -188,7 +188,7 @@
           <div class="column is-one-third" data-aos="zoom-in">
             <div class="is-flex logo">
               <figure class="image is-64x64">
-                <img src="../assets/svgs/colored/jira.svg" alt="Jira">
+                <img src="../assets/svgs/colored/jira.svg" alt="Jira" />
               </figure>
             </div>
             <h1 class="skill">Jira</h1>
