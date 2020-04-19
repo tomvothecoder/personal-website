@@ -5,6 +5,7 @@ import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import Experience from '../components/Experience';
 import Skills from '../components/Skills';
 import Projects from '../components/Projects';
+import About from '../components/About';
 
 import './Home.css';
 
@@ -77,7 +78,7 @@ function Home() {
           <h1 className="section-title has-text-centered">
             — A little about me —
           </h1>
-          {/* <about></about> */}
+          <About />
         </div>
       </section>
     </div>
