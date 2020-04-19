@@ -17,7 +17,9 @@ function Home() {
           <div className="hero-body">
             <div className="container has-text-centered">
               <h1 id="hero-welcome">Hi, I&apos;m</h1>
-              <h1 id="hero-title">Tom Vo</h1>
+              <h1 id="hero-title" data-aos="zoom-in-left" data-aos-delay="350">
+                Tom Vo
+              </h1>
               <h2 id="hero-subtitle">
                 I&apos;m a Software Engineer and I like to build web-apps.
               </h2>
