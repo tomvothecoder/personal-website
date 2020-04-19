@@ -11,30 +11,9 @@ function NavBar() {
             <nav className="level">
               <div className="level-item has-text-centered">
                 <div>
-                  <a href="#" className="nav-link">
-                    <span className="nav-heading">Experience</span>
-                  </a>
-                </div>
-              </div>
-              <div className="level-item has-text-centered">
-                <div>
-                  <a href="#" className="nav-link">
-                    <span className="nav-heading">Skills</span>
-                  </a>
-                </div>
-              </div>
-              <div className="level-item has-text-centered">
-                <div>
-                  <a href="#" className="nav-link">
-                    <span className="nav-heading">Portfolio</span>
-                  </a>
-                </div>
-              </div>
-              <div className="level-item has-text-centered">
-                <div>
-                  <a href="#" className="nav-link">
-                    <span className="nav-heading">About</span>
-                  </a>
+                  <NavLink to="/">
+                    <span className="nav-heading">Home</span>
+                  </NavLink>
                 </div>
               </div>
               <div className="level-item has-text-centered">
@@ -45,15 +24,6 @@ function NavBar() {
                 </div>
               </div>
             </nav>
-            {/* <nav className="blog" v-if="['blog'].includes($route.name)">
-                <div className="level-item has-text-centered">
-                  <div>
-                    <NavLink to="/" className="nav-link">
-                      <span className="nav-heading">Home</span>
-                    </NavLink>
-                  </div>
-                </div>
-              </nav> */}
           </div>
         </div>
       </section>

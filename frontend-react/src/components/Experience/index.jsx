@@ -23,7 +23,10 @@ function Experience() {
             company="Lawrence Livermore National Lab"
             length="2020 - Present"
             location="Livermore, CA"
-          ></Card>
+          >
+            I recently became a member of the Analytics, Informatics, and
+            Management Systems Team.
+          </Card>
         </div>
       </div>
       <div
@@ -35,18 +38,17 @@ function Experience() {
           <Card
             imgSrc={energeiaLogo}
             href="http://energeia-usa.com"
-            jobTitle="Software Developer"
+            jobTitle="Software Engineer"
             company="Energeia USA"
             length="2018 - 2020"
             location="Davis, CA"
           >
-            At Energeia, I was the lead software engineer in charge of
-            transitioning uSim,the world&apos;s most advanced Python energy
-            simulation software, onto a SaaS platform. I also performed data
-            analytics on modeling data sets to develop dashboards, which aided
-            the work of the consulting team. It was an awesome being apart a
-            face-paced start-up environment performing cutting-edge research for
-            the energy industry.
+            At Energeia, I was a lead software engineer for uSim, an advanced
+            Python energy simulation software based on machine learning. I also
+            performed data analytics on modeling data sets to develop
+            dashboards, which aided the work of the consulting team. It was an
+            awesome being apart a face-paced start-up environment performing
+            cutting-edge research for the energy industry.
           </Card>
         </div>
       </div>

@@ -1,6 +1,20 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
+const styles = {
+  card: {
+    borderRadius: 25,
+  },
+  company: {
+    fontWeight: 500,
+    fontSize: '1.25rem',
+  },
+  jobTitle: {
+    fontWeight: 600,
+    color: '#5e9516',
+  },
+};
+
 function Card({ imgSrc, href, length, company, jobTitle, location, children }) {
   Card.propTypes = {
     imgSrc: PropTypes.elementType.isRequired,
@@ -13,7 +27,7 @@ function Card({ imgSrc, href, length, company, jobTitle, location, children }) {
   };
 
   return (
-    <div className="card">
+    <div className="card" style={styles.card}>
       <div className="card-content">
         <div className="columns">
           <div className="column is-one-quarter">
@@ -24,13 +38,13 @@ function Card({ imgSrc, href, length, company, jobTitle, location, children }) {
           <div className="column is-three-quarters">
             <a
               href={href}
-              className="company"
+              style={styles.company}
               rel="noopener noreferrer"
               target="_blank"
             >
               {company}
             </a>
-            <p className="job-title">
+            <p style={styles.jobTitle}>
               {jobTitle}, <span className="is-italic">{length}</span>
             </p>
             <p className="job-location has-text-weight-bold">{location}</p>
