@@ -4,6 +4,7 @@ import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 
 import Experience from '../components/Experience';
 import Skills from '../components/Skills';
+import Projects from '../components/Projects';
 
 import './Home.css';
 
@@ -56,19 +57,19 @@ function Home() {
           <h1 className="section-title has-text-centered">
             — Where I&apos;ve been —
           </h1>
-          <Experience></Experience>
+          <Experience />
         </div>
       </section>
       <section className="section" id="skills">
         <div className="container has-text-centered">
           <h1 className="section-title">— Things I&apos;ve Learned —</h1>
-          <Skills></Skills>
+          <Skills />
         </div>
       </section>
       <section className="section" id="portfolio">
         <div className="container has-text-centered">
           <h1 className="section-title">— Some of my work —</h1>
-          {/* <portfolio></portfolio> */}
+          <Projects />
         </div>
       </section>
       <section className="section" id="about">
