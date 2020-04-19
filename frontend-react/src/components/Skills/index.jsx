@@ -28,12 +28,24 @@ import jira from '../../assets/svgs/colored/jira.svg';
 function Skills() {
   return (
     <div id="skills">
-      <div className="columns is-centered">
-        <Skill imgSrc={python} skill="Python" colSize="is-1" />
-        <Skill imgSrc={c} skill="C" colSize="is-1" />
-        <Skill imgSrc={cplusplus} skill="C++" colSize="is-1" />
+      <div className="columns is-mobile is-centered">
+        <Skill
+          imgSrc={python}
+          skill="Python"
+          colSize="is-1-desktop is-one-third-mobile"
+        />
+        <Skill
+          imgSrc={c}
+          skill="C"
+          colSize="is-1-desktop is-one-third-mobile"
+        />
+        <Skill
+          imgSrc={cplusplus}
+          skill="C++"
+          colSize="is-1-desktop is-one-third-mobile"
+        />
       </div>
-      <div className="columns">
+      <div className="columns is-mobile">
         <div className="column">
           <h1 className="skills-header">Back-End</h1>
           <div className="columns is-centered">
@@ -53,10 +65,6 @@ function Skills() {
         <div className="column">
           <h1 className="skills-header">Front-End</h1>
           <div className="columns is-centered">
-            <Skill imgSrc={html5} skill="HTML" colSize="is-one-third" />
-            <Skill imgSrc={css3} skill="CSS" colSize="is-one-third" />
-          </div>
-          <div className="columns is-centered">
             <Skill imgSrc={reactjs} skill="React" colSize="is-one-third" />
             <Skill imgSrc={vue} skill="Vue" colSize="is-one-third" />
           </div>
@@ -67,6 +75,10 @@ function Skills() {
               colSize="is-one-third"
             />
             <Skill imgSrc={bulma} skill="Bulma" colSize="is-one-third" />
+          </div>
+          <div className="columns is-centered">
+            <Skill imgSrc={html5} skill="HTML" colSize="is-one-third" />
+            <Skill imgSrc={css3} skill="CSS" colSize="is-one-third" />
           </div>
         </div>
 
