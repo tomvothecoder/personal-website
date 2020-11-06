@@ -5,7 +5,12 @@
       <div class="column has-text-centered is-one-third">
         <div class="is-flex logo">
           <figure class="image is-64x64 logo">
-            <img src="../assets/svgs/colored/django.svg" alt="django" height="50px" width="50px">
+            <img
+              src="../../assets/svgs/colored/django.svg"
+              alt="django"
+              height="50px"
+              width="50px"
+            />
           </figure>
         </div>
         <div class="skill">
@@ -14,7 +19,12 @@
       </div>
       <div class="column is-one-third">
         <figure class="image is-96x64">
-          <img src="../assets/svgs/colored/nodejs.svg" alt="django" height="100px" width="125px">
+          <img
+            src="../../assets/svgs/colored/nodejs.svg"
+            alt="django"
+            height="100px"
+            width="125px"
+          />
         </figure>
         <div class="skill">
           <h1>Node.js</h1>
@@ -27,9 +37,8 @@
 <script>
 export default {
   name: "Skill",
-  props: {}
+  props: {},
 };
 </script>
 
-<style scoped>
-</style>
+<style scoped></style>

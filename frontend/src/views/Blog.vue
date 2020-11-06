@@ -5,7 +5,12 @@
         <div class="column is-full has-text-centered">
           <div class="columns is-centered">
             <figure class="image is-128x128">
-              <img class="is-rounded" src="../assets/personal/me.jpg" alt="me" id="me" />
+              <img
+                class="is-rounded"
+                src="../assets/personal/me.jpg"
+                alt="me"
+                id="me"
+              />
             </figure>
           </div>
           <h1 class="blog-title">Tom's Time Capsule</h1>
@@ -15,7 +20,10 @@
           <div class="column is-full" v-for="post in posts" :key="post.id">
             <div class="columns is-centered">
               <div class="column is-three-quarters">
-                <BlogPostCard :post="post" @click.native="alertClicked(post.title)"></BlogPostCard>
+                <BlogPostCard
+                  :post="post"
+                  @click.native="alertClicked(post.title)"
+                ></BlogPostCard>
               </div>
             </div>
           </div>
@@ -25,19 +33,18 @@
   </transition>
 </template>
 
-
 <script>
 import axios from "axios";
-import BlogPostCard from "@/components/BlogPostCard.vue";
+import BlogPostCard from "@/components/Blog/BlogPostCard.vue";
 
 export default {
   name: "blog",
   components: {
-    BlogPostCard
+    BlogPostCard,
   },
   data() {
     return {
-      posts: null
+      posts: null,
     };
   },
   mounted: function() {
@@ -47,12 +54,12 @@ export default {
     FetchData: function() {
       axios
         .get("http://localhost:8000/api/v1/blog/posts/")
-        .then(response => (this.posts = response.data));
+        .then((response) => (this.posts = response.data));
     },
     alertClicked: function(post) {
       alert(`clicked ${post}`);
-    }
-  }
+    },
+  },
 };
 </script>
 

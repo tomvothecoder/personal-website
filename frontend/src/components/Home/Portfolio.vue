@@ -5,11 +5,11 @@
         <div class="column is-half">
           <a href="https://github.com/tvo25/myliftingpal" target="_blank">
             <figure data-aos="fade" class="image project-img">
-              <img class="proj-img" src="../assets/personal/proj1.png">
+              <img class="proj-img" src="../../assets/personal/proj1.png" />
               <div class="overlay">
                 <h1 class="text">
                   MyLiftingPal
-                  <br>A web app designed for fitness enthusiasts
+                  <br />A web app designed for fitness enthusiasts
                 </h1>
               </div>
             </figure>
@@ -17,12 +17,16 @@
         </div>
         <div class="column is-half">
           <a href="https://github.com/tvo25/the-grove" target="_blank">
-            <figure data-aos="fade" data-aos-delay="100" class="image project-img">
-              <img src="../assets/personal/proj2_edit.png">
+            <figure
+              data-aos="fade"
+              data-aos-delay="100"
+              class="image project-img"
+            >
+              <img src="../../assets/personal/proj2_edit.png" />
               <div class="overlay">
                 <h1 class="text">
                   The Grove
-                  <br>A web app for UOP's on-campus convenience store
+                  <br />A web app for UOP's on-campus convenience store
                 </h1>
               </div>
             </figure>
@@ -36,12 +40,11 @@
 <script>
 export default {
   name: "Portfolio",
-  props: {}
+  props: {},
 };
 </script>
 
 <style scoped>
-
 .proj-img {
   border-width: 100px;
   border-color: black;
@@ -75,4 +78,3 @@ export default {
   text-align: center;
 }
 </style>
-

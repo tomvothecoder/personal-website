@@ -1,4 +1,3 @@
-
 <template>
   <div id="app">
     <Navigation></Navigation>
@@ -25,7 +24,7 @@ p {
   font-family: "Lato", sans-serif;
 }
 
-# #app {
+#app {
   font-family: "Raleway", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -63,11 +62,11 @@ nav {
 </style>
 
 <script>
-import Navigation from "./components/Navigation";
+import Navigation from "./components/Home/Navigation";
 export default {
   name: "app",
   components: {
-    Navigation: Navigation
-  }
+    Navigation: Navigation,
+  },
 };
 </script>
