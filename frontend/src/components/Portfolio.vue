@@ -5,7 +5,7 @@
         <div class="column is-half">
           <a href="https://github.com/tvo25/myliftingpal" target="_blank">
             <figure data-aos="fade" class="image project-img">
-              <img class="proj-img" src="../assets/proj1.png">
+              <img class="proj-img" src="../assets/personal/proj1.png">
               <div class="overlay">
                 <h1 class="text">
                   MyLiftingPal
@@ -18,7 +18,7 @@
         <div class="column is-half">
           <a href="https://github.com/tvo25/the-grove" target="_blank">
             <figure data-aos="fade" data-aos-delay="100" class="image project-img">
-              <img src="../assets/proj2_edit.png">
+              <img src="../assets/personal/proj2_edit.png">
               <div class="overlay">
                 <h1 class="text">
                   The Grove

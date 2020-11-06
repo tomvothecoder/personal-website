@@ -7,7 +7,7 @@
             <div class="columns">
               <div class="column is-one-quarter">
                 <figure class="image is-3by3">
-                  <img src="../assets/energeia.png" alt="Energeia USA">
+                  <img src="../assets/logos/energeia.png" alt="Energeia USA">
                 </figure>
               </div>
               <div class="column is-three-quarters">
@@ -37,7 +37,7 @@
               <div class="column is-one-quarter">
                 <figure class="image is-3by2" id="intel-logo">
                   <img
-                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Intel-logo.svg/1200px-Intel-logo.svg.png"
+                    src="../assets/logos/intel.svg"
                     alt="Intel"
                   >
                 </figure>
@@ -50,7 +50,7 @@
                 </p>
                 <p class="job-location has-text-weight-bold">Folsom, CA</p>
                 <p class="job-desc">
-                  Interning at Intel was an amazing experience where I flexed my engineering muscles within the business world.
+                  Intel was an awesome experience and stepping-stone into the tech industry.
                   I aided internal research on market segments by implenting Python scripts to automate the flow of data collection.
                   My research lead to key decisions in product roadmap planning for Embedded SSDs.
                   In the process, I learned foundational skills such managing projects and understanding the role of stakeholders in within those projects.
@@ -68,7 +68,7 @@
             <div class="columns">
               <div class="column is-one-quarter">
                 <figure class="image is-3by3">
-                  <img src="../assets/uop_tower.jpg" alt="UOP">
+                  <img src="../assets/logos/uop_tower.jpg" alt="UOP">
                 </figure>
               </div>
               <div class="column is-three-quarters">

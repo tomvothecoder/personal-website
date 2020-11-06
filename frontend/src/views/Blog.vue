@@ -5,7 +5,7 @@
         <div class="column is-full has-text-centered">
           <div class="columns is-centered">
             <figure class="image is-128x128">
-              <img class="is-rounded" src="../assets/me.jpg" alt="me" id="me" />
+              <img class="is-rounded" src="../assets/personal/me.jpg" alt="me" id="me" />
             </figure>
           </div>
           <h1 class="blog-title">Tom's Time Capsule</h1>
