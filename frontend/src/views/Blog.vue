@@ -35,16 +35,16 @@
 
 <script>
 import axios from 'axios';
-import BlogPostCard from '@/components/Blog/BlogPostCard.vue';
+import BlogPostCard from '../components/Blog/BlogPostCard.vue';
 
 export default {
   name: 'blog',
   components: {
-    BlogPostCard,
+    BlogPostCard
   },
   data() {
     return {
-      posts: null,
+      posts: null
     };
   },
   mounted() {
@@ -52,14 +52,15 @@ export default {
   },
   methods: {
     FetchData() {
-      axios
-        .get('http://localhost:8000/api/v1/blog/posts/')
-        .then((response) => (this.posts = response.data));
+      axios.get('http://localhost:8000/api/v1/blog/posts/').then(response => {
+        this.posts = response.data;
+      });
     },
     alertClicked(post) {
+      // eslint-disable-next-line no-alert
       alert(`clicked ${post}`);
-    },
-  },
+    }
+  }
 };
 </script>
 

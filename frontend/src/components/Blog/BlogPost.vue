@@ -1,16 +1,14 @@
 <template>
-    <div id="BlogPost">
-        {{post}}
-    </div>
+  <div id="BlogPost">
+    {{ post }}
+  </div>
 </template>
 
 <script>
-
 export default {
   name: 'BlogPost',
-  props: { post: Object },
+  props: { post: Object }
 };
 </script>
 
-<style scoped>
-</style>
+<style scoped></style>

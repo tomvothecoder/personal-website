@@ -11,18 +11,18 @@ export default new Router({
     {
       path: '/',
       name: 'home',
-      component: Home,
+      component: Home
     },
     {
       path: '/blog',
       name: 'blog',
-      component: Blog,
+      component: Blog
     },
     {
       path: '/blog/post/:id',
       name: 'blog-post',
       component: BlogPost,
-      props: true,
-    },
-  ],
+      props: true
+    }
+  ]
 });

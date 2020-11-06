@@ -224,7 +224,7 @@
   position: relative;
 }
 .skills-header:before {
-  content: "";
+  content: '';
   position: absolute;
   width: 50%;
   height: 1px;

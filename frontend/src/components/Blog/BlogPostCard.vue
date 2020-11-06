@@ -1,8 +1,11 @@
 <template>
   <div id="BlogPostCard">
-    <router-link :to="{ name: 'blog-post', params: { id: post.id, post: post}}" class="nav-link">
+    <router-link
+      :to="{ name: 'blog-post', params: { id: post.id, post: post } }"
+      class="nav-link"
+    >
       <h2 class="post-title">{{ post.title }}</h2>
-      <p class="post-date">{{ post.created_on | moment}}</p>
+      <p class="post-date">{{ post.created_on | moment }}</p>
       <p></p>
       {{ post.body }}
     </router-link>
@@ -15,21 +18,21 @@ import moment from 'moment';
 export default {
   name: 'BlogPostCard',
   props: {
-    post: Object,
+    post: Object
   },
   data() {
     return {
-      current: 'BlogPost',
+      current: 'BlogPost'
     };
   },
   methods: {
-    viewPost() {},
+    viewPost() {}
   },
   filters: {
     moment(date) {
       return moment(date).format('MMMM Do, YYYY');
-    },
-  },
+    }
+  }
 };
 </script>
 

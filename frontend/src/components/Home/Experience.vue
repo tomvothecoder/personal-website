@@ -120,7 +120,7 @@
 <script>
 export default {
   name: 'Experience',
-  props: {},
+  props: {}
 };
 </script>
 

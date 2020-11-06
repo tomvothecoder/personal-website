@@ -6,15 +6,24 @@
           <div class="card-content">
             <form @submit="formSubmit">
               <strong>Name:</strong>
-              <input class="input" type="text" placeholder="First Last" v-model="name" />
+              <input
+                class="input"
+                type="text"
+                placeholder="First Last"
+                v-model="name"
+              />
               <strong>E-mail:</strong>
               <input class="input" type="text" placeholder v-model="email" />
               <strong>Message:</strong>
-              <textarea class="textarea" placeholder="Hi Tom! You're awesome!" v-model="message"></textarea>
+              <textarea
+                class="textarea"
+                placeholder="Hi Tom! You're awesome!"
+                v-model="message"
+              ></textarea>
               <div class="control">
                 <button type="submit" class="button is-primary">Submit</button>
               </div>
-              <pre>{{output}}</pre>
+              <pre>{{ output }}</pre>
             </form>
           </div>
         </div>
@@ -33,7 +42,7 @@ export default {
       name: '',
       email: '',
       message: '',
-      output: '',
+      output: ''
     };
   },
   methods: {
@@ -44,18 +53,17 @@ export default {
         .post('http://localhost:8000/api/v1/blog/contact/', {
           name: this.name,
           email: this.email,
-          message: this.message,
+          message: this.message
         })
-        .then((response) => {
+        .then(response => {
           currentObj.output = response.data;
         })
-        .catch((error) => {
+        .catch(error => {
           currentObj.output = error;
         });
-    },
-  },
+    }
+  }
 };
 </script>
 
-<style scoped>
-</style>
+<style scoped></style>

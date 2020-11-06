@@ -8,8 +8,8 @@
 </template>
 
 <style>
-@import url("https://fonts.googleapis.com/css?family=Lato&display=swap");
-@import url("https://fonts.googleapis.com/css?family=Raleway:300&display=swap");
+@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Raleway:300&display=swap');
 
 h1,
 h2,
@@ -17,15 +17,15 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Raleway", sans-serif;
+  font-family: 'Raleway', sans-serif;
 }
 
 p {
-  font-family: "Lato", sans-serif;
+  font-family: 'Lato', sans-serif;
 }
 
 #app {
-  font-family: "Raleway", sans-serif;
+  font-family: 'Raleway', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -62,12 +62,12 @@ nav {
 </style>
 
 <script>
-import Navigation from './components/Home/Navigation';
+import Navigation from './components/TheNavigation.vue';
 
 export default {
   name: 'app',
   components: {
-    Navigation,
-  },
+    Navigation
+  }
 };
 </script>

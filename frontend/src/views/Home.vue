@@ -79,10 +79,10 @@
 
 <script>
 // @ is an alias to /src
-import Portfolio from '@/components/Home/Portfolio.vue';
-import Experience from '@/components/Home/Experience.vue';
-import Skills from '@/components/Home/Skills.vue';
-import About from '@/components/Home/About.vue';
+import Portfolio from '../components/Home/Portfolio.vue';
+import Experience from '../components/Home/Experience.vue';
+import Skills from '../components/Home/Skills.vue';
+import About from '../components/Home/About.vue';
 
 export default {
   name: 'home',
@@ -90,8 +90,8 @@ export default {
     Portfolio,
     Experience,
     About,
-    Skills,
-  },
+    Skills
+  }
 };
 </script>
 
@@ -157,7 +157,7 @@ export default {
 }
 
 .company {
-  font-family: "Raleway", sans-serif;
+  font-family: 'Raleway', sans-serif;
   font-weight: bold;
 }
 </style>
