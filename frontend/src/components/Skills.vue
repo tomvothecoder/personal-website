@@ -13,18 +13,18 @@
       <div class="column is-1" data-aos="zoom-in">
         <div class="is-flex logo">
           <figure class="image is-64x64 logo">
-            <img src="../assets/svgs/colored/c.svg" alt="Django" />
+            <img src="../assets/svgs/javascript.svg" alt="JavaScript" />
           </figure>
         </div>
-        <h1 class="skill" id="django">C</h1>
+        <h1 class="skill" id="javascript">JavaScript</h1>
       </div>
       <div class="column is-1" data-aos="zoom-in">
         <div class="is-flex logo">
           <figure class="image is-64x64 logo">
-            <img src="../assets/svgs/colored/c++.svg" alt="Django" />
+            <img src="../assets/svgs/typescript-icon.svg" alt="TypeScript" />
           </figure>
         </div>
-        <h1 class="skill" id="django">C++</h1>
+        <h1 class="skill" id="typescript">TypeScript</h1>
       </div>
     </div>
     <div class="columns">
@@ -34,15 +34,17 @@
           <div class="column is-one-third" data-aos="zoom-in">
             <div class="is-flex logo">
               <figure class="image is-64x64 logo">
-                <img src="../assets/svgs/colored/django.svg" alt="Django" />
+                <img src="../assets/svgs/django.svg" alt="Django" />
               </figure>
             </div>
             <h1 class="skill" id="django">Django</h1>
           </div>
           <div class="column is-one-third" data-aos="zoom-in">
-            <figure class="image is-96x64">
-              <img src="../assets/svgs/colored/nodejs.svg" alt="Node.js" />
-            </figure>
+            <div class="is-flex logo">
+              <figure class="image is-64x64">
+                <img src="../assets/svgs/nodejs-icon.svg" alt="Node.js" />
+              </figure>
+            </div>
             <h1 class="skill">Node.js</h1>
           </div>
         </div>
@@ -58,25 +60,49 @@
           <div class="column is-one-third" data-aos="zoom-in">
             <div class="is-flex logo">
               <figure class="image is-64x64">
-                <img src="../assets/svgs/colored/postgresql.svg" alt="PostgreSQL" />
+                <img
+                  src="../assets/svgs/colored/postgresql.svg"
+                  alt="PostgreSQL"
+                />
               </figure>
             </div>
 
             <h1 class="skill">PostgreSQL</h1>
           </div>
         </div>
-        <div class="columns is-centered">
-          <div class="column is-one-third" data-aos="zoom-in">
-            <div class="is-flex logo">
-              <img src="../assets/svgs/colored/mongodb.svg" alt="MongoDB" />
-            </div>
-            <h1 class="skill">MongoDB</h1>
-          </div>
-        </div>
       </div>
 
       <div class="column">
         <h1 class="skills-header">Front-End</h1>
+        <div class="columns is-centered">
+          <div class="column is-one-third" data-aos="zoom-in">
+            <div class="is-flex logo">
+              <figure class="image is-64x64">
+                <img src="../assets/svgs/react.svg" alt="React" />
+              </figure>
+            </div>
+            <h1 class="skill">React</h1>
+          </div>
+          <div class="column is-one-third" data-aos="zoom-in">
+            <div class="is-flex logo">
+              <figure class="image is-64x64">
+                <img src="../assets/svgs/ant-design.svg" alt="Ant Design" />
+              </figure>
+            </div>
+            <h1 class="skill">Ant Design</h1>
+          </div>
+        </div>
+        <div class="columns is-centered">
+          <div class="column is-one-third" data-aos="zoom-in">
+            <div class="is-flex logo">
+              <figure class="image is-64x64">
+                <img src="../assets/svgs/colored/vue.svg" alt="Vue" />
+              </figure>
+            </div>
+
+            <h1 class="skill">Vue</h1>
+          </div>
+        </div>
         <div class="columns is-centered">
           <div class="column is-one-third" data-aos="zoom-in">
             <div class="is-flex logo">
@@ -97,28 +123,12 @@
         </div>
         <div class="columns is-centered">
           <div class="column is-one-third" data-aos="zoom-in">
-            <div class="is-flex logo" id="jquery">
-              <figure class="image is-96x64">
-                <img src="../assets/svgs/colored/jquery.svg" alt="jQuery" />
-              </figure>
-            </div>
-            <h1 class="skill" id="jquery-text">jQuery</h1>
-          </div>
-          <div class="column is-one-third" data-aos="zoom-in">
             <div class="is-flex logo">
               <figure class="image is-64x64">
-                <img src="../assets/svgs/colored/vue.svg" alt="Vue" />
-              </figure>
-            </div>
-
-            <h1 class="skill">Vue</h1>
-          </div>
-        </div>
-        <div class="columns is-centered">
-          <div class="column is-one-third" data-aos="zoom-in">
-            <div class="is-flex logo">
-              <figure class="image is-64x64">
-                <img src="../assets/svgs/colored/bootstrap.svg" alt="Bootstrap" />
+                <img
+                  src="../assets/svgs/colored/bootstrap.svg"
+                  alt="Bootstrap"
+                />
               </figure>
             </div>
 
@@ -143,7 +153,10 @@
           <div class="column is-one-third" data-aos="zoom-in">
             <div class="is-flex logo">
               <figure class="image is-64x64 logo">
-                <img src="../assets/svgs/colored/github-icon.svg" alt="Github" />
+                <img
+                  src="../assets/svgs/colored/github-icon.svg"
+                  alt="Github"
+                />
               </figure>
             </div>
             <h1 class="skill">Github</h1>
@@ -151,7 +164,10 @@
           <div class="column is-one-third" data-aos="zoom-in">
             <div class="is-flex logo">
               <figure class="image is-64x64">
-                <img src="../assets/svgs/colored/bitbucket.svg" alt="Bitbucket" />
+                <img
+                  src="../assets/svgs/colored/bitbucket.svg"
+                  alt="Bitbucket"
+                />
               </figure>
             </div>
             <h1 class="skill">Bitbucket</h1>
@@ -180,7 +196,10 @@
           <div class="column is-one-third" data-aos="zoom-in">
             <div class="is-flex logo">
               <figure class="image is-64x64">
-                <img src="../assets/svgs/colored/confluence.svg" alt="Confluence" />
+                <img
+                  src="../assets/svgs/colored/confluence.svg"
+                  alt="Confluence"
+                />
               </figure>
             </div>
             <h1 class="skill">Confluence</h1>
