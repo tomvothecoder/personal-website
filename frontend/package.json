@@ -9,21 +9,21 @@
   },
   "dependencies": {
     "aos": "3.0.0-beta.6",
-    "axios": "0.20.0",
+    "axios": "0.21.0",
     "bulma": "0.9.1",
-    "core-js": "3.6.5",
-    "moment": "2.29.0",
+    "core-js": "3.7.0",
+    "moment": "2.29.1",
     "vue": "2.6.12",
     "vue-router": "3.4.5",
-    "vue-scrollto": "2.18.2"
+    "vue-scrollto": "2.20.0"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "4.5.6",
     "@vue/cli-plugin-eslint": "4.5.6",
     "@vue/cli-service": "4.5.6",
     "babel-eslint": "10.1.0",
-    "eslint": "7.10.0",
-    "eslint-plugin-vue": "7.0.1",
+    "eslint": "7.12.1",
+    "eslint-plugin-vue": "7.1.0",
     "vue-template-compiler": "2.6.12",
     "webpack-bundle-tracker": "1.0.0-alpha.1"
   },
