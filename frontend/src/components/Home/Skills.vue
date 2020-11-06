@@ -1,7 +1,7 @@
 <template>
   <div id="skills">
     <div class="columns is-centered">
-      <div class="column is-1" data-aos="zoom-in">
+      <div class="column is-2" data-aos="zoom-in">
         <div class="is-flex logo">
           <figure class="image is-64x64 logo">
             <img src="../../assets/skills/python.svg" alt="Django" />
@@ -9,7 +9,7 @@
         </div>
         <h1 class="skill" id="django">Python</h1>
       </div>
-      <div class="column is-1" data-aos="zoom-in">
+      <div class="column is-2" data-aos="zoom-in">
         <div class="is-flex logo">
           <figure class="image is-64x64 logo">
             <img src="../../assets/skills/javascript.svg" alt="JavaScript" />
@@ -17,7 +17,7 @@
         </div>
         <h1 class="skill" id="javascript">JavaScript</h1>
       </div>
-      <div class="column is-1" data-aos="zoom-in">
+      <div class="column is-2" data-aos="zoom-in">
         <div class="is-flex logo">
           <figure class="image is-64x64 logo">
             <img
@@ -88,6 +88,16 @@
           <div class="column is-one-third" data-aos="zoom-in">
             <div class="is-flex logo">
               <figure class="image is-64x64">
+                <img src="../../assets/skills/vue.svg" alt="Vue" />
+              </figure>
+            </div>
+            <h1 class="skill">Vue</h1>
+          </div>
+        </div>
+        <div class="columns is-centered">
+          <div class="column is-one-third" data-aos="zoom-in">
+            <div class="is-flex logo">
+              <figure class="image is-64x64">
                 <img
                   src="../../assets/skills/ant-design.svg"
                   alt="Ant Design"
@@ -96,16 +106,14 @@
             </div>
             <h1 class="skill">Ant Design</h1>
           </div>
-        </div>
-        <div class="columns is-centered">
           <div class="column is-one-third" data-aos="zoom-in">
             <div class="is-flex logo">
               <figure class="image is-64x64">
-                <img src="../../assets/skills/vue.svg" alt="Vue" />
+                <img src="../../assets/skills/bootstrap.svg" alt="Bootstrap" />
               </figure>
             </div>
 
-            <h1 class="skill">Vue</h1>
+            <h1 class="skill">Bootstrap 4</h1>
           </div>
         </div>
         <div class="columns is-centered">
@@ -124,26 +132,6 @@
               </figure>
             </div>
             <h1 class="skill">CSS</h1>
-          </div>
-        </div>
-        <div class="columns is-centered">
-          <div class="column is-one-third" data-aos="zoom-in">
-            <div class="is-flex logo">
-              <figure class="image is-64x64">
-                <img src="../../assets/skills/bootstrap.svg" alt="Bootstrap" />
-              </figure>
-            </div>
-
-            <h1 class="skill">Bootstrap 4</h1>
-          </div>
-          <div class="column is-one-third" data-aos="zoom-in">
-            <div class="is-flex logo">
-              <figure class="image is-64x64">
-                <img src="../../assets/skills/bulma.svg" alt="Bulma" />
-              </figure>
-            </div>
-
-            <h1 class="skill">Bulma</h1>
           </div>
         </div>
       </div>
@@ -239,10 +227,6 @@
 .skill {
   font-weight: bold;
   padding-top: 0.5rem;
-}
-#jquery,
-#jquery-text {
-  padding-top: 1.25rem;
 }
 #django {
   padding-top: 1rem;
