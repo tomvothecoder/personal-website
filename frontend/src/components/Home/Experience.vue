@@ -119,7 +119,7 @@
 
 <script>
 export default {
-  name: "Experience",
+  name: 'Experience',
   props: {},
 };
 </script>

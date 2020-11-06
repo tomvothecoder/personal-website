@@ -10,26 +10,26 @@
 </template>
 
 <script>
-import moment from "moment";
+import moment from 'moment';
 
 export default {
-  name: "BlogPostCard",
+  name: 'BlogPostCard',
   props: {
-    post: Object
+    post: Object,
   },
   data() {
     return {
-      current: "BlogPost"
+      current: 'BlogPost',
     };
   },
   methods: {
-    viewPost: function() {}
+    viewPost() {},
   },
   filters: {
-    moment: function(date) {
-      return moment(date).format("MMMM Do, YYYY");
-    }
-  }
+    moment(date) {
+      return moment(date).format('MMMM Do, YYYY');
+    },
+  },
 };
 </script>
 

@@ -1,23 +1,23 @@
-import Vue from 'vue'
-import App from './App.vue'
-import router from './router'
+import Vue from 'vue';
+import App from './App.vue';
+import router from './router';
 import '../node_modules/bulma/css/bulma.css';
-import AOS from 'aos'
-import 'aos/dist/aos.css'
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
-Vue.config.productionTip = false
-var VueScrollTo = require('vue-scrollto');
+Vue.config.productionTip = false;
+const VueScrollTo = require('vue-scrollto');
+
 Vue.use(VueScrollTo, {
-  duration: 1200
-})
+  duration: 1200,
+});
 
 new Vue({
-  created () {
+  created() {
     AOS.init({
-      once: true
-    }
-    )
+      once: true,
+    });
   },
   router,
-  render: h => h(App)
-}).$mount('#app')
+  render: (h) => h(App),
+}).$mount('#app');

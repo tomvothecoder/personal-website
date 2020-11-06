@@ -62,11 +62,12 @@ nav {
 </style>
 
 <script>
-import Navigation from "./components/Home/Navigation";
+import Navigation from './components/Home/Navigation';
+
 export default {
-  name: "app",
+  name: 'app',
   components: {
-    Navigation: Navigation,
+    Navigation,
   },
 };
 </script>

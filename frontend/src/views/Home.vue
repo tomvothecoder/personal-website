@@ -79,13 +79,13 @@
 
 <script>
 // @ is an alias to /src
-import Portfolio from "@/components/Home/Portfolio.vue";
-import Experience from "@/components/Home/Experience.vue";
-import Skills from "@/components/Home/Skills.vue";
-import About from "@/components/Home/About.vue";
+import Portfolio from '@/components/Home/Portfolio.vue';
+import Experience from '@/components/Home/Experience.vue';
+import Skills from '@/components/Home/Skills.vue';
+import About from '@/components/Home/About.vue';
 
 export default {
-  name: "home",
+  name: 'home',
   components: {
     Portfolio,
     Experience,

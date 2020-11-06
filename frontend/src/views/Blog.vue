@@ -34,11 +34,11 @@
 </template>
 
 <script>
-import axios from "axios";
-import BlogPostCard from "@/components/Blog/BlogPostCard.vue";
+import axios from 'axios';
+import BlogPostCard from '@/components/Blog/BlogPostCard.vue';
 
 export default {
-  name: "blog",
+  name: 'blog',
   components: {
     BlogPostCard,
   },
@@ -47,16 +47,16 @@ export default {
       posts: null,
     };
   },
-  mounted: function() {
+  mounted() {
     this.FetchData();
   },
   methods: {
-    FetchData: function() {
+    FetchData() {
       axios
-        .get("http://localhost:8000/api/v1/blog/posts/")
+        .get('http://localhost:8000/api/v1/blog/posts/')
         .then((response) => (this.posts = response.data));
     },
-    alertClicked: function(post) {
+    alertClicked(post) {
       alert(`clicked ${post}`);
     },
   },

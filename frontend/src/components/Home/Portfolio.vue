@@ -39,7 +39,7 @@
 
 <script>
 export default {
-  name: "Portfolio",
+  name: 'Portfolio',
   props: {},
 };
 </script>

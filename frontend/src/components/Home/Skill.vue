@@ -36,7 +36,7 @@
 
 <script>
 export default {
-  name: "Skill",
+  name: 'Skill',
   props: {},
 };
 </script>

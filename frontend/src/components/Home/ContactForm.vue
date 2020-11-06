@@ -24,36 +24,36 @@
 </template>
 
 <script>
-import axios from "axios";
+import axios from 'axios';
 
 export default {
-  name: "ContactForm",
+  name: 'ContactForm',
   data() {
     return {
-      name: "",
-      email: "",
-      message: "",
-      output: ""
+      name: '',
+      email: '',
+      message: '',
+      output: '',
     };
   },
   methods: {
     formSubmit(e) {
       e.preventDefault();
-      let currentObj = this;
+      const currentObj = this;
       axios
-        .post("http://localhost:8000/api/v1/blog/contact/", {
+        .post('http://localhost:8000/api/v1/blog/contact/', {
           name: this.name,
           email: this.email,
-          message: this.message
+          message: this.message,
         })
-        .then(function(response) {
+        .then((response) => {
           currentObj.output = response.data;
         })
-        .catch(function(error) {
+        .catch((error) => {
           currentObj.output = error;
         });
-    }
-  }
+    },
+  },
 };
 </script>
 

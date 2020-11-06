@@ -6,10 +6,10 @@
 
 <script>
 
-    export default {
-        name: "BlogPost",
-        props: {'post': Object}
-    };
+export default {
+  name: 'BlogPost',
+  props: { post: Object },
+};
 </script>
 
 <style scoped>
