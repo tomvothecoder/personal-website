@@ -7,10 +7,7 @@
             <div class="columns">
               <div class="column is-one-quarter">
                 <figure class="image is-3by3">
-                  <img
-                    src="../../assets/logos/energeia.png"
-                    alt="Energeia USA"
-                  />
+                  <img src="../assets/logos/energeia.png" alt="Energeia USA" />
                 </figure>
               </div>
               <div class="column is-three-quarters">
@@ -50,7 +47,7 @@
             <div class="columns">
               <div class="column is-one-quarter">
                 <figure class="image is-3by2" id="intel-logo">
-                  <img src="../../assets/logos/intel.svg" alt="Intel" />
+                  <img src="../assets/logos/intel.svg" alt="Intel" />
                 </figure>
               </div>
               <div class="column is-three-quarters">
@@ -84,7 +81,7 @@
             <div class="columns">
               <div class="column is-one-quarter">
                 <figure class="image is-3by3">
-                  <img src="../../assets/logos/uop_tower.jpg" alt="UOP" />
+                  <img src="../assets/logos/uop_tower.jpg" alt="UOP" />
                 </figure>
               </div>
               <div class="column is-three-quarters">

@@ -7,7 +7,7 @@
             <div class="columns">
               <div class="column is-one-quarter">
                 <figure class="image">
-                  <img src="../../assets/personal/me.jpg" alt="me" id="me" />
+                  <img src="../assets/personal/me.jpg" alt="me" id="me" />
                 </figure>
               </div>
               <div class="column is-three-quarters">
