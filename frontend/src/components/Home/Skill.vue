@@ -1,44 +1,45 @@
 <template>
-  <div id="Skill">
-    <h1 class="skills-header">Back-End</h1>
-    <div class="columns is-centered">
-      <div class="column has-text-centered is-one-third">
-        <div class="is-flex logo">
-          <figure class="image is-64x64 logo">
-            <img
-              src="../../assets/svgs/colored/django.svg"
-              alt="django"
-              height="50px"
-              width="50px"
-            />
-          </figure>
-        </div>
-        <div class="skill">
-          <h1>Django</h1>
-        </div>
-      </div>
-      <div class="column is-one-third">
-        <figure class="image is-96x64">
-          <img
-            src="../../assets/svgs/colored/nodejs.svg"
-            alt="django"
-            height="100px"
-            width="125px"
-          />
+  <div id="skill" data-aos="zoom-in">
+    <div class="is-flex logo">
+      <div class="logo">
+        <figure class="image is-64x64">
+          <img :src="getImgUrl" :alt="name" />
         </figure>
-        <div class="skill">
-          <h1>Node.js</h1>
-        </div>
       </div>
     </div>
+    <h1 class="label" :id="name">{{ name }}</h1>
   </div>
 </template>
 
 <script>
 export default {
   name: 'Skill',
-  props: {}
+  props: { name: String, source: String },
+  computed: {
+    getImgUrl() {
+      // eslint-disable-next-line global-require, import/no-dynamic-require
+      return require(`../../assets/skills/${this.source}`);
+    }
+  }
 };
 </script>
 
-<style scoped></style>
+<style>
+.label {
+  font-weight: bold;
+  padding-top: 0.5rem;
+}
+
+#Django,
+#Docker-Compose {
+  padding-top: 1rem;
+}
+
+#Traefik {
+  padding-top: 1.25rem;
+}
+
+.logo {
+  justify-content: center;
+}
+</style>
