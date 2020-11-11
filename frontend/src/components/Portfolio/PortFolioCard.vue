@@ -53,7 +53,7 @@ export default {
 }
 .text {
   color: white;
-  font-size: 1.25rem;
+  font-size: 20px;
   font-weight: bold;
   position: absolute;
   top: 50%;
