@@ -80,7 +80,7 @@
 <script>
 // @ is an alias to /src
 import Portfolio from '../components/Portfolio.vue';
-import Experience from '../components/Experience.vue';
+import Experience from '../components/Experience/Experience.vue';
 import Skills from '../components/Skills/Skills.vue';
 import About from '../components/About.vue';
 
@@ -144,20 +144,5 @@ export default {
   font-weight: 500;
   color: black;
   margin-bottom: 3%;
-}
-
-.company {
-  font-weight: 500;
-  font-size: 125%;
-}
-
-.job-title {
-  font-weight: 600;
-  color: #5e9516;
-}
-
-.company {
-  font-family: 'Raleway', sans-serif;
-  font-weight: bold;
 }
 </style>
