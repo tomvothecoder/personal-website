@@ -1,6 +1,6 @@
 <template>
-  <div id="Navigation">
-    <section class="container" id="nav">
+  <div id="the-navigation">
+    <section class="container">
       <div class="columns">
         <div class="column is-half is-offset-one-quarter">
           <!-- Home page navigation bar -->
@@ -59,6 +59,27 @@
 
 <script>
 export default {
-  name: 'Navigation'
+  name: 'TheNavigation'
 };
 </script>
+
+<style scoped>
+#the-navigation {
+  margin-top: 50px;
+}
+
+.nav-link {
+  color: black;
+}
+
+.nav-link:hover {
+  color: #0077b5;
+}
+.nav-heading {
+  display: block;
+  font-size: 14px;
+  letter-spacing: 1px;
+  margin-bottom: 5px;
+  text-transform: uppercase;
+}
+</style>

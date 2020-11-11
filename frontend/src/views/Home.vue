@@ -1,46 +1,6 @@
 <template>
   <div class="home">
-    <!-- Hero -->
-    <section class="section">
-      <div class="hero is-large is-center">
-        <div class="hero-body">
-          <div class="container has-text-centered">
-            <h1 id="hero-welcome">Hi, I'm</h1>
-            <h1 id="hero-title">Tom Vo</h1>
-            <h2 id="hero-subtitle">
-              I'm a Software Engineer and I like to build web-apps.
-            </h2>
-          </div>
-          <div class="container has-text-centered">
-            <div class="columns is-mobile is-multiline is-centered">
-              <div class="column is-narrow">
-                <p class="bd-notification is-primary">
-                  <a
-                    href="https://www.linkedin.com/in/tomvo16/"
-                    id="linkedin-icon"
-                    target="_blank"
-                  >
-                    <i class="fab fa-linkedin fa-3x"></i>
-                  </a>
-                </p>
-              </div>
-              <div class="column is-narrow">
-                <p class="bd-notification is-primary">
-                  <a
-                    href="https://github.com/tvo25"
-                    id="github-icon"
-                    target="_blank"
-                  >
-                    <i class="fab fa-github fa-3x"></i>
-                  </a>
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- End Hero -->
+    <the-hero></the-hero>
     <!-- Experience -->
     <section class="section" id="experience">
       <div class="container">
@@ -79,45 +39,25 @@
 
 <script>
 // @ is an alias to /src
-import Portfolio from '../components/Portfolio.vue';
+import TheHero from '../components/TheHero.vue';
 import Experience from '../components/Experience/Experience.vue';
 import Skills from '../components/Skills/Skills.vue';
+import Portfolio from '../components/Portfolio.vue';
 import About from '../components/About.vue';
 
 export default {
   name: 'home',
   components: {
-    Portfolio,
+    TheHero,
     Experience,
-    About,
-    Skills
+    Skills,
+    Portfolio,
+    About
   }
 };
 </script>
 
 <style>
-#hero-welcome {
-  color: #363636;
-  font-size: 1.25rem;
-  font-weight: 400;
-  line-height: 1.125;
-  font-style: italic;
-}
-
-#hero-title {
-  color: #363636;
-  font-size: 3rem;
-  font-weight: 500;
-  line-height: 1.125;
-}
-
-#hero-subtitle {
-  color: #4a4a4a;
-  font-size: 1.25rem;
-  font-weight: 300;
-  margin: 25px;
-}
-
 #linkedin-icon {
   color: #0077b5;
 }

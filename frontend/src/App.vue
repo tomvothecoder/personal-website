@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <Navigation></Navigation>
+    <the-navigation></the-navigation>
     <transition name="fade" mode="out-in">
       <router-view />
     </transition>
@@ -18,34 +18,14 @@ h4,
 h5,
 h6 {
   font-family: 'Raleway', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 p {
   font-family: 'Lato', sans-serif;
-}
-
-#app {
-  font-family: 'Raleway', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-}
-nav {
-  margin-top: 50px;
-}
-
-.nav-link {
-  color: black;
-}
-
-.nav-link:hover {
-  color: #0077b5;
-}
-.nav-heading {
-  display: block;
-  font-size: 14px;
-  letter-spacing: 1px;
-  margin-bottom: 5px;
-  text-transform: uppercase;
 }
 
 .fade-enter-active,
@@ -62,12 +42,12 @@ nav {
 </style>
 
 <script>
-import Navigation from './components/TheNavigation.vue';
+import TheNavigation from './components/TheNavigation.vue';
 
 export default {
   name: 'app',
   components: {
-    Navigation
+    TheNavigation
   }
 };
 </script>
