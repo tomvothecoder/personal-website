@@ -42,7 +42,7 @@
 import TheHero from '../components/TheHero.vue';
 import Experience from '../components/Experience/Experience.vue';
 import Skills from '../components/Skills/Skills.vue';
-import Portfolio from '../components/Portfolio.vue';
+import Portfolio from '../components/Portfolio/Portfolio.vue';
 import About from '../components/About.vue';
 
 export default {
