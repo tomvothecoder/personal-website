@@ -39,8 +39,11 @@ export default {
           location: 'Livermore, CA',
           link: 'http://llnl.gov/',
           src: 'llnl.jpg',
-          description: ` I recently became a member of the Analytics, Informatics, and
-            Management Systems Team.`
+          description: `I recently joined LLNL on the Analytics, Informatics,
+          and Management Systems (AIMS) group. I am leading development of
+          MetaGrid, the next-gen Earth System Grid Federation (ESGF) climate modeling
+          search portal using React, TypeScript, Django REST Framework,
+          PostgreSQL, and Docker Compose.`
         },
         {
           company: 'Energeia USA',
@@ -49,12 +52,13 @@ export default {
           location: 'Davis, CA',
           src: 'energeia.png',
           link: 'http://energeia-usa.com/',
-          description: `At Energeia, I was a lead software engineer for uSim, an advanced
-            Python energy simulation software based on machine learning. I also
-            performed data analytics on modeling data sets to develop
-            dashboards, which aided the work of the consulting team. It was an
-            awesome being apart a face-paced start-up environment performing
-            cutting-edge research for the energy industry.`
+          description: `I was the lead software engineer for uSim, Energeia's
+            SaaS Python energy simulation platform. I was tasked with refactoring
+            and optimizing uSim's codebase, while also integrating new features. I also
+            performed data analytics with Pandas and developed visualization dashboards
+            using Plotly, which aided the work of the consulting team. It was a
+            rewarding experience developing cutting edge tools for the energy
+            industry.`
         },
         {
           company: 'Intel Corporation',
@@ -63,9 +67,9 @@ export default {
           location: 'Folsom, CA',
           src: 'intel.svg',
           link: 'https://intel.com',
-          description: `Interning at Intel was an amazing experience where I flexed my
-            engineering muscles within the business world. I aided internal
-            research on market segments by implenting Python scripts to automate
+          description: `At Intel, I was able to apply my engineering skills directly in
+           the context of marketing and business. I aided internal
+            research on market segments by implementing Python scripts to automate
             the flow of data collection. My research lead to key decisions in
             product roadmap planning for Embedded SSDs. In the process, I
             learned foundational skills such managing projects and understanding
@@ -78,10 +82,11 @@ export default {
           location: 'Stockton, CA',
           src: 'uop_tower.jpg',
           link: 'https://pacific.edu',
-          description: `UOP's computer science program helped me build the fundamentals
-            in becoming an engineer. Faculty push students to seek real world
-            experience through co-op, which I was forunate enough to partake in
-            with Intel. I was deeply engaged in community service through Alpha
+          description: `UOP's computer science program built the groundwork
+           for me to become a software engineer. The co-op internship curriculum pushes students
+            to seek professional working experience while earning course units.
+            Through the program, I was fortunate enough to intern at Intel.
+            I was deeply engaged in community service as a member of Alpha
             Phi Omega, an international service organization. My experience at
             UOP helped shape critical life skills, including empathy,
             understanding, communication, and leadership.`
