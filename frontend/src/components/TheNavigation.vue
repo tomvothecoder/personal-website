@@ -33,13 +33,13 @@
                 </a>
               </div>
             </div>
-            <div class="level-item has-text-centered">
+            <!-- <div class="level-item has-text-centered">
               <div>
                 <router-link to="/blog" class="nav-link">
                   <span class="nav-heading">blog</span>
                 </router-link>
               </div>
-            </div>
+            </div> -->
           </nav>
           <!-- Blog navigation bar -->
           <nav class="blog" v-if="['blog'].includes($route.name)">
