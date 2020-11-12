@@ -3,7 +3,7 @@
     <h1 class="skills-header">{{ name }}</h1>
     <div class="columns is-centered" v-for="i in rowCount" :key="i">
       <div
-        class="column is-one-third"
+        class="column is-one-third-desktop is-one-half-tablet is-one-half-mobile"
         v-for="skill in itemCountInRow(i)"
         :key="skill[0]"
       >

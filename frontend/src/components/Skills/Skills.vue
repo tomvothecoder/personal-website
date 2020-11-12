@@ -27,7 +27,7 @@ export default {
       backend: [
         ['Django', 'django.svg'],
         ['Node.js', 'nodejs-icon.svg'],
-        ['PostgreSQL', 'postgresql.svg'],
+        ['Postgres', 'postgresql.svg'],
         ['MySQL', 'mysql.svg']
       ],
       frontend: [
