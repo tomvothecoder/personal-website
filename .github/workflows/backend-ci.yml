@@ -4,6 +4,7 @@ name: CI
 env:
   DOCKER_BUILDKIT: 1
   COMPOSE_DOCKER_CLI_BUILD: 1
+  DATABASE_URL: pgsql://XDwVOJDPZWeKGECmAgdQMlsrrHgJFiir:EfhBcfu9MS0MNUboMvw7AOOvabRvO2jwDJEACSxXUslei0Me5WmJQE9JXV8oavo3@postgres:5432/personal_website
 
 on:
   pull_request:
