@@ -7,7 +7,8 @@ from django.views.generic import TemplateView
 from rest_framework.authtoken.views import obtain_auth_token
 from wagtail.admin import urls as wagtailadmin_urls
 from wagtail.core import urls as wagtail_urls
-from wagtail.documents import urls as wagtaildocs_urls
+
+from config.api_router_wagtail import api_router
 
 urlpatterns = [
     path("", TemplateView.as_view(template_name="pages/home.html"), name="home"),
@@ -19,23 +20,22 @@ urlpatterns = [
     # User management
     path("users/", include("personal_website.users.urls", namespace="users")),
     path("accounts/", include("allauth.urls")),
-    # Your stuff: custom urls includes go here
+    # Wagtail
     # For anything not caught by a more specific rule above, hand over to
     # Wagtail's serving mechanism
     path("cms/", include(wagtailadmin_urls)),
-    path("documents/", include(wagtaildocs_urls)),
-    path("pages/", include(wagtail_urls)),
-    # For anything not caught by a more specific rule above, hand over to
-    # Wagtail's serving mechanism
-    re_path(r"", include(wagtail_urls)),
+    path("api/wagtail/v2/", api_router.urls),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 
 # API URLS
 urlpatterns += [
     # API base url
-    path("api/", include("config.api_router")),
+    path("api/v1/", include("config.api_router")),
     # DRF auth token
     path("auth-token/", obtain_auth_token),
+]
+urlpatterns += [
+    re_path(r"", include(wagtail_urls)),
 ]
 
 if settings.DEBUG:

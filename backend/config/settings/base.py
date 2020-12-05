@@ -75,6 +75,7 @@ THIRD_PARTY_APPS = [
     "wagtail.search",
     "wagtail.admin",
     "wagtail.core",
+    "wagtail.api.v2",
     "taggit",
     "modelcluster",
     "crispy_forms",
@@ -89,6 +90,7 @@ THIRD_PARTY_APPS = [
 LOCAL_APPS = [
     "personal_website.users.apps.UsersConfig",
     # Your stuff: custom apps go here
+    "personal_website.blog.apps.BlogConfig",
 ]
 # https://docs.djangoproject.com/en/dev/ref/settings/#installed-apps
 INSTALLED_APPS = DJANGO_APPS + THIRD_PARTY_APPS + LOCAL_APPS
