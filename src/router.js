@@ -10,6 +10,10 @@ export default new Router({
   mode: 'history',
   routes: [
     {
+      path: '/dist/index.html',
+      redirect: '/'
+    },
+    {
       path: '/',
       name: 'home',
       component: Home
