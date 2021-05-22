@@ -10,11 +10,11 @@
   "dependencies": {
     "aos": "3.0.0-beta.6",
     "axios": "0.21.0",
-    "bulma": "0.9.1",
-    "core-js": "3.7.0",
+    "bulma": "0.9.2",
+    "core-js": "3.12.1",
     "moment": "2.29.1",
     "vue": "2.6.12",
-    "vue-gtag": "^1.10.0",
+    "vue-gtag": "1.16.1",
     "vue-router": "3.4.9",
     "vue-scrollto": "2.20.0"
   },
@@ -22,15 +22,15 @@
     "@vue/cli-plugin-babel": "4.5.8",
     "@vue/cli-plugin-eslint": "~4.5.0",
     "@vue/cli-service": "4.5.8",
-    "@vue/eslint-config-airbnb": "^5.0.2",
+    "@vue/eslint-config-airbnb": "5.3.0",
     "babel-eslint": "^10.1.0",
-    "eslint": "7.12.1",
+    "eslint": "7.27.0",
     "eslint-config-prettier": "^6.15.0",
-    "eslint-plugin-import": "^2.20.2",
-    "eslint-plugin-prettier": "^3.1.4",
-    "eslint-plugin-vue": "7.1.0",
+    "eslint-plugin-import": "2.23.3",
+    "eslint-plugin-prettier": "3.4.0",
+    "eslint-plugin-vue": "7.9.0",
     "vue-template-compiler": "2.6.12",
-    "webpack-bundle-tracker": "1.0.0-alpha.1"
+    "webpack-bundle-tracker": "1.0.0"
   },
   "eslintConfig": {
     "root": true,
