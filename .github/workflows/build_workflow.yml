@@ -44,7 +44,7 @@ jobs:
 
       - name: Copy Build and Commit
         run: |
-          git clone https://github.com/tomvothecoder/personal_website.git --branch gh-pages --single-branch gh-pages
+          git clone https://github.com/tomvothecoder/personal-website.git --branch gh-pages --single-branch gh-pages
 
           cd gh-pages
           rm -r *
