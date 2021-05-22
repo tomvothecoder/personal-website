@@ -7,7 +7,7 @@ on:
     branches: [master]
 
 jobs:
-  publish_site:
+  publish-site:
     # if: ${{ github.event_name == 'push' }}
     runs-on: ubuntu-latest
     defaults:
@@ -51,7 +51,7 @@ jobs:
           echo 'tomvo.me' > CNAME
 
           # Add index.html to point to `master` branch automatically
-          printf '<meta http-equiv="refresh" content="0; url=./_build/html/master/index.html" />' >> index.html
+          printf '<meta http-equiv="refresh" content="0; url=./dist/index.html" />' >> index.html
           cp -r ../dist .
 
           git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
