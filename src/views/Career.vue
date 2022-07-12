@@ -1,5 +1,5 @@
 <template>
-  <div class="home">
+  <div class="career">
     <the-hero></the-hero>
     <!-- Experience -->
     <section class="section" id="experience">
@@ -39,11 +39,11 @@
 
 <script>
 // @ is an alias to /src
-import TheHero from '../components/TheHero.vue';
-import Experience from '../components/Experience/Experience.vue';
-import Skills from '../components/Skills/Skills.vue';
-import Portfolio from '../components/Portfolio/Portfolio.vue';
-import About from '../components/About.vue';
+import About from '../components/Career/About.vue';
+import Experience from '../components/Career/Experience/Experience.vue';
+import Portfolio from '../components/Career/Portfolio/Portfolio.vue';
+import Skills from '../components/Career/Skills/Skills.vue';
+import TheHero from '../components/Career/TheHero.vue';
 
 export default {
   name: 'home',

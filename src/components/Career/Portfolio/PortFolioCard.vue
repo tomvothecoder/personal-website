@@ -24,7 +24,7 @@ export default {
   computed: {
     getImgUrl() {
       // eslint-disable-next-line global-require, import/no-dynamic-require
-      return require(`../../assets/portfolio/${this.imageSrc}`);
+      return require(`../../../assets/portfolio/${this.imageSrc}`);
     }
   }
 };

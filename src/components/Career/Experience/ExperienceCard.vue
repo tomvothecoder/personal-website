@@ -39,7 +39,7 @@ export default {
   computed: {
     getImgUrl() {
       // eslint-disable-next-line global-require, import/no-dynamic-require
-      return require(`../../assets/logos/${this.imgSrc}`);
+      return require(`../../../assets/logos/${this.imgSrc}`);
     }
   }
 };

@@ -7,7 +7,7 @@
           <h1 id="hero-welcome">Hi, I'm</h1>
           <h1 id="hero-title">Tom Vo</h1>
           <h2 id="hero-description">
-            I'm a Software Engineer and I like to build web-apps.
+            I'm a Software Engineer in Climate Science.
             <span class="blinking-cursor">|</span>
           </h2>
         </div>
@@ -16,7 +16,7 @@
             <div class="column is-narrow">
               <p class="bd-notification is-primary">
                 <a
-                  href="https://www.linkedin.com/in/tomvo16/"
+                  href="https://www.linkedin.com/in/votom/"
                   id="linkedin-icon"
                   target="_blank"
                 >
@@ -27,7 +27,7 @@
             <div class="column is-narrow">
               <p class="bd-notification is-primary">
                 <a
-                  href="https://github.com/tvo25"
+                  href="https://github.com/tomvothecoder"
                   id="github-icon"
                   target="_blank"
                 >
